@@ -9,7 +9,7 @@ public class Graph {
         this.nodeList = nodeList;
     }
 
-    public void addUndirectedNeighborNode(int i,int j){
+    public void addUndirectedEdge(int i, int j){
         var main = nodeList.get(i);
         var neighbor = nodeList.get(j);
 

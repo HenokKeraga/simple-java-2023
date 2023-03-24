@@ -15,12 +15,12 @@ public class Main {
 
         Graph graph = new Graph(nodeList)  ;
 
-        graph.addUndirectedNeighborNode(0,1);
-        graph.addUndirectedNeighborNode(0,2);
-        graph.addUndirectedNeighborNode(0,3);
-        graph.addUndirectedNeighborNode(1,4);
-        graph.addUndirectedNeighborNode(2,3);
-        graph.addUndirectedNeighborNode(3,4);
+        graph.addUndirectedEdge(0,1);
+        graph.addUndirectedEdge(0,2);
+        graph.addUndirectedEdge(0,3);
+        graph.addUndirectedEdge(1,4);
+        graph.addUndirectedEdge(2,3);
+        graph.addUndirectedEdge(3,4);
 
         System.out.println(graph.toString());
 
