@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+
         List<GraphNode> nodeList = List.of(
                 new GraphNode("A", 0, new ArrayList<>()),
                 new GraphNode("B", 1, new ArrayList<>()),
@@ -23,6 +24,9 @@ public class Main {
         graph.addUndirectedEdge(3,4);
 
         System.out.println(graph.toString());
+        System.out.println(graph.bfs(graph.nodeList.get(0),graph.nodeList.size()));
+
+        System.out.println(graph.dfs(graph.nodeList.get(0),graph.nodeList.size()));
 
     }
 }
